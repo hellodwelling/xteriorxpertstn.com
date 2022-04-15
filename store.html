@@ -10,7 +10,7 @@
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Pressure Washing in Rutherford County, TN | Xterior Xperts LLC Pressure Washing &amp; Painting |  Store</title>
+    <title>Pressure Washing in Wilson County, TN | Xterior Xperts LLC Pressure Washing &amp; Painting |  Store</title>
     <meta name="description"
           content="None">
     <!-- <title>ProPhone Templates</title> -->
@@ -256,13 +256,16 @@
                         })
                         .catch(result => {
                             console.log(result)
-                            alert("Please make sure to fill out each field")
+                            alert("There was a problem sending your text. Please reach out to ProPhone.")
                         })
 
                         setTimeout(() => {
+                            const sendTextModalId = document.getElementById("send-text-modal")
                             const modalId = document.getElementById("text-thank-you")
                             modalId.style.display = 'none';
-                            reload()
+                            if (sendTextModalId.style.display === 'none') {
+                                reload()
+                            }
                         }, 5000);
 
                         const reload = () => {
@@ -604,19 +607,8 @@ Contact us today for a free quote.</p> -->
                                         <div class="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
                                             <div class="relative grid gap-6 px-5 py-6 bg-white sm:gap-8 sm:p-8">
                                                 <!-- Render each sublink -->
-                                                <!-- <each loop="link in [{&#x27;title&#x27;: &#x27;Our Best Work&#x27;, &#x27;copy&#x27;: &#x27;Concrete&#x27;, &#x27;href&#x27;: &#x27;gallery-Concrete&#x27;}, {&#x27;title&#x27;: &#x27;Our Best Work&#x27;, &#x27;copy&#x27;: &#x27;Houses&#x27;, &#x27;href&#x27;: &#x27;gallery-Houses&#x27;}, {&#x27;title&#x27;: &#x27;All Photos&#x27;, &#x27;copy&#x27;: &#x27;All Photos&#x27;, &#x27;href&#x27;: &#x27;gallery-All&#x27;}]"> -->
+                                                <!-- <each loop="link in [{&#x27;title&#x27;: &#x27;Our Best Work&#x27;, &#x27;copy&#x27;: &#x27;Houses&#x27;, &#x27;href&#x27;: &#x27;gallery-Houses&#x27;}, {&#x27;title&#x27;: &#x27;Our Best Work&#x27;, &#x27;copy&#x27;: &#x27;Concrete&#x27;, &#x27;href&#x27;: &#x27;gallery-Concrete&#x27;}, {&#x27;title&#x27;: &#x27;All Photos&#x27;, &#x27;copy&#x27;: &#x27;All Photos&#x27;, &#x27;href&#x27;: &#x27;gallery-All&#x27;}]"> -->
                                                   
-                                                    <a
-                                                        href=" gallery-Concrete "
-                                                        role="menuitem"
-                                                        class="block p-3 -m-3 transition rounded-md  focus:outline-none focus:ring-2 ring-primary ring-opacity-75 ring-offset-2 hover:bg-gray-50"
-                                                    >
-                                                        <!-- <p class="text-base font-medium text-gray-900">Our Best Work</p> -->
-                                                        <p class="mt-1 text-sm text-gray-500">Concrete</p>
-                                                    </a>
-                                                <!-- </each> -->
-                                               <!--  -->
-                                                 
                                                     <a
                                                         href=" gallery-Houses "
                                                         role="menuitem"
@@ -624,6 +616,17 @@ Contact us today for a free quote.</p> -->
                                                     >
                                                         <!-- <p class="text-base font-medium text-gray-900">Our Best Work</p> -->
                                                         <p class="mt-1 text-sm text-gray-500">Houses</p>
+                                                    </a>
+                                                <!-- </each> -->
+                                               <!--  -->
+                                                 
+                                                    <a
+                                                        href=" gallery-Concrete "
+                                                        role="menuitem"
+                                                        class="block p-3 -m-3 transition rounded-md  focus:outline-none focus:ring-2 ring-primary ring-opacity-75 ring-offset-2 hover:bg-gray-50"
+                                                    >
+                                                        <!-- <p class="text-base font-medium text-gray-900">Our Best Work</p> -->
+                                                        <p class="mt-1 text-sm text-gray-500">Concrete</p>
                                                     </a>
                                                 <!-- </each> -->
                                                <!--  -->
@@ -921,15 +924,15 @@ Contact us today for a free quote.</p> -->
                                         <div class="relative grid gap-6 px-5 py-2 bg-white rounded-lg">
                                             <!-- Render each sublink -->
                                             
-                                                <a href="gallery-Concrete" role="menuitem" class="block p-3 -m-3 transition rounded-md">
-                                                    <!-- <p class="text-base font-medium text-gray-900">Our Best Work</p> -->
-                                                    <p class="mt-1 text-sm text-gray-500">Concrete</p>
-                                                </a>
-                                            <!-- </each> -->
-                                            
                                                 <a href="gallery-Houses" role="menuitem" class="block p-3 -m-3 transition rounded-md">
                                                     <!-- <p class="text-base font-medium text-gray-900">Our Best Work</p> -->
                                                     <p class="mt-1 text-sm text-gray-500">Houses</p>
+                                                </a>
+                                            <!-- </each> -->
+                                            
+                                                <a href="gallery-Concrete" role="menuitem" class="block p-3 -m-3 transition rounded-md">
+                                                    <!-- <p class="text-base font-medium text-gray-900">Our Best Work</p> -->
+                                                    <p class="mt-1 text-sm text-gray-500">Concrete</p>
                                                 </a>
                                             <!-- </each> -->
                                             
@@ -1063,7 +1066,7 @@ Contact us today for a free quote.</p> -->
                             </svg>
                         </div>
                         <h3 class="text-xl font-medium text-gray-900">Send us a text</h3>
-                        <p class="mt-4 text-base text-gray-500">None</p>
+                        <p class="mt-4 text-base text-gray-500">Use the Contact Us button to send us a text message.</p>
                     </div>
                 </div>
             <!-- </each> -->
@@ -1091,7 +1094,7 @@ Contact us today for a free quote.</p> -->
                             </svg>
                         </div>
                         <h3 class="text-xl font-medium text-gray-900">Chat on the phone</h3>
-                        <p class="mt-4 text-base text-gray-500">None</p>
+                        <p class="mt-4 text-base text-gray-500">We&#x27;ll find a time to talk on the phone to learn more.</p>
                     </div>
                 </div>
             <!-- </each> -->
@@ -1119,7 +1122,7 @@ Contact us today for a free quote.</p> -->
                             </svg>
                         </div>
                         <h3 class="text-xl font-medium text-gray-900">Receive a quote</h3>
-                        <p class="mt-4 text-base text-gray-500">None</p>
+                        <p class="mt-4 text-base text-gray-500">Then we can provide a quote. Easy as that!</p>
                     </div>
                 </div>
             <!-- </each> -->
@@ -1189,7 +1192,7 @@ Contact us today for a free quote.</p> -->
               <p class="text-base text-gray-100">
                   Xterior Xperts LLC Pressure Washing &amp; Painting<br/>
                    
-                      Rutherford County, TN <br/>
+                      Wilson County, TN <br/>
                   
                   +16155543790
                   <!-- Is this supposed to be here and correct?  -->
@@ -1370,14 +1373,6 @@ Contact us today for a free quote.</p> -->
                               <a
                                   href="#"
                                   class="p-1 text-base text-gray-100 rounded hover:text-gray-300 focus:ring-2 focus:outline-none ring-white ring-opacity-75"
-                                  >Rutherford County, TN</a
-                              >
-                          </li>
-                          
-                          <li>
-                              <a
-                                  href="#"
-                                  class="p-1 text-base text-gray-100 rounded hover:text-gray-300 focus:ring-2 focus:outline-none ring-white ring-opacity-75"
                                   >Wilson County, TN</a
                               >
                           </li>
@@ -1387,6 +1382,14 @@ Contact us today for a free quote.</p> -->
                                   href="#"
                                   class="p-1 text-base text-gray-100 rounded hover:text-gray-300 focus:ring-2 focus:outline-none ring-white ring-opacity-75"
                                   >Davidson County, TN</a
+                              >
+                          </li>
+                          
+                          <li>
+                              <a
+                                  href="#"
+                                  class="p-1 text-base text-gray-100 rounded hover:text-gray-300 focus:ring-2 focus:outline-none ring-white ring-opacity-75"
+                                  >Rutherford County, TN</a
                               >
                           </li>
                           
@@ -1515,7 +1518,7 @@ Contact us today for a free quote.</p> -->
 
                 <!-- Form -->
 
-                <form class="overflow-y-scroll pb-20 sm:w-full">
+                <form class="overflow-y-auto pb-20 sm:w-full" onsubmit="send_sms('Xterior-Xperts--Final')">
                     <div class="flex-grow h-full overflow-x-hidden overflow-y-auto">
                         <div class="h-full px-6 pb-1 mt-6 space-y-6 sm:grid sm:grid-cols-2 sm:min-w-max sm:space-x-3">
                             <!-- Full Name -->
@@ -1537,6 +1540,7 @@ Contact us today for a free quote.</p> -->
                             <div>
                                 <label for="contact-phone-number" class="sr-only">Phone Number</label>
                                 <input
+                                        required
                                         type="tel"
                                         name="phone-number"
                                         id="contact-phone-number"
@@ -1596,68 +1600,68 @@ Contact us today for a free quote.</p> -->
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-183751"
-                                                    name="183751"
+                                                    id="contact-service-185306"
+                                                    name="185306"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Fence Washing"
                                             />
-                                            <label for="contact-label-service-183751" class="ml-3 text-sm font-medium text-gray-700">Fence Washing</label>
+                                            <label for="contact-label-service-185306" class="ml-3 text-sm font-medium text-gray-700">Fence Washing</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-183752"
-                                                    name="183752"
+                                                    id="contact-service-185307"
+                                                    name="185307"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Roof Cleaning"
                                             />
-                                            <label for="contact-label-service-183752" class="ml-3 text-sm font-medium text-gray-700">Roof Cleaning</label>
+                                            <label for="contact-label-service-185307" class="ml-3 text-sm font-medium text-gray-700">Roof Cleaning</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-183753"
-                                                    name="183753"
+                                                    id="contact-service-185308"
+                                                    name="185308"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Decks, Pool Decks, & Sidewalks"
                                             />
-                                            <label for="contact-label-service-183753" class="ml-3 text-sm font-medium text-gray-700">Decks, Pool Decks, & Sidewalks</label>
+                                            <label for="contact-label-service-185308" class="ml-3 text-sm font-medium text-gray-700">Decks, Pool Decks, & Sidewalks</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-183754"
-                                                    name="183754"
+                                                    id="contact-service-185309"
+                                                    name="185309"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Home Softwashing"
                                             />
-                                            <label for="contact-label-service-183754" class="ml-3 text-sm font-medium text-gray-700">Home Softwashing</label>
+                                            <label for="contact-label-service-185309" class="ml-3 text-sm font-medium text-gray-700">Home Softwashing</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-183755"
-                                                    name="183755"
+                                                    id="contact-service-185310"
+                                                    name="185310"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Driveway & Sealcoating"
                                             />
-                                            <label for="contact-label-service-183755" class="ml-3 text-sm font-medium text-gray-700">Driveway & Sealcoating</label>
+                                            <label for="contact-label-service-185310" class="ml-3 text-sm font-medium text-gray-700">Driveway & Sealcoating</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-183756"
-                                                    name="183756"
+                                                    id="contact-service-185311"
+                                                    name="185311"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Commercial Projects"
                                             />
-                                            <label for="contact-label-service-183756" class="ml-3 text-sm font-medium text-gray-700">Commercial Projects</label>
+                                            <label for="contact-label-service-185311" class="ml-3 text-sm font-medium text-gray-700">Commercial Projects</label>
                                         </div>
                                         
                                     </div>
@@ -1670,7 +1674,6 @@ Contact us today for a free quote.</p> -->
                                 <div class='sm:flex-grow'>
                                     <label for="contact-concern" class="sr-only">How can we help you?</label>
                                     <textarea
-                                            required
                                             id="contact-concern"
                                             name="concern"
                                             rows="4"
@@ -1689,68 +1692,68 @@ Contact us today for a free quote.</p> -->
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-183751"
-                                                    name="183751"
+                                                    id="contact-service-185306"
+                                                    name="185306"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Fence Washing"
                                             />
-                                            <label for="contact-label-service-183751" class="ml-3 text-sm font-medium text-gray-700">Fence Washing</label>
+                                            <label for="contact-label-service-185306" class="ml-3 text-sm font-medium text-gray-700">Fence Washing</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-183752"
-                                                    name="183752"
+                                                    id="contact-service-185307"
+                                                    name="185307"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Roof Cleaning"
                                             />
-                                            <label for="contact-label-service-183752" class="ml-3 text-sm font-medium text-gray-700">Roof Cleaning</label>
+                                            <label for="contact-label-service-185307" class="ml-3 text-sm font-medium text-gray-700">Roof Cleaning</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-183753"
-                                                    name="183753"
+                                                    id="contact-service-185308"
+                                                    name="185308"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Decks, Pool Decks, & Sidewalks"
                                             />
-                                            <label for="contact-label-service-183753" class="ml-3 text-sm font-medium text-gray-700">Decks, Pool Decks, & Sidewalks</label>
+                                            <label for="contact-label-service-185308" class="ml-3 text-sm font-medium text-gray-700">Decks, Pool Decks, & Sidewalks</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-183754"
-                                                    name="183754"
+                                                    id="contact-service-185309"
+                                                    name="185309"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Home Softwashing"
                                             />
-                                            <label for="contact-label-service-183754" class="ml-3 text-sm font-medium text-gray-700">Home Softwashing</label>
+                                            <label for="contact-label-service-185309" class="ml-3 text-sm font-medium text-gray-700">Home Softwashing</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-183755"
-                                                    name="183755"
+                                                    id="contact-service-185310"
+                                                    name="185310"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Driveway & Sealcoating"
                                             />
-                                            <label for="contact-label-service-183755" class="ml-3 text-sm font-medium text-gray-700">Driveway & Sealcoating</label>
+                                            <label for="contact-label-service-185310" class="ml-3 text-sm font-medium text-gray-700">Driveway & Sealcoating</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-183756"
-                                                    name="183756"
+                                                    id="contact-service-185311"
+                                                    name="185311"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Commercial Projects"
                                             />
-                                            <label for="contact-label-service-183756" class="ml-3 text-sm font-medium text-gray-700">Commercial Projects</label>
+                                            <label for="contact-label-service-185311" class="ml-3 text-sm font-medium text-gray-700">Commercial Projects</label>
                                         </div>
                                         
                                     </div>
@@ -1762,47 +1765,56 @@ Contact us today for a free quote.</p> -->
                             </div>
                         </div>
                     </div>
-
+                    <div class="flex items-center justify-center w-full">
+                        <button     class="
+                                    py-2.5
+                                    w-4/5
+                                    fixed
+                                    bottom
+                                    text-sm
+                                    font-medium
+                                    transition
+                                    border-2 border-transparent
+                                    rounded-md
+                                    bg-primary
+                                    text-primary-foreground
+                                    focus:outline-none
+                                    hover:bg-primary-darker
+                                    bg-primar
+                                    focus-visible:ring-2
+                                    ring-primary ring-opacity-75 ring-offset-2"
+                                    style="
+                                    position:absolute;
+                                    left: 50%;
+                                    bottom: 0;
+                                    transform: translate(-50%, -50%);
+                                    margin-top: 0;
+                                    margin-bottom: 0">Send
+                        </button>
+                    </div>
                 </form>
-                <div class="flex
-                                items-center
-                                justify-center
-                                w-full
-                            "
-                     onclick="send_sms('Xterior-Xperts--Final')"
-                >
-                    <button class="
-                                py-2.5
-                                w-4/5
-                                fixed
-                                bottom
-                                text-sm
-                                font-medium
-                                transition
-                                border-2 border-transparent
-                                rounded-md
-                                bg-primary
-                                text-primary-foreground
-                                focus:outline-none
-                                hover:bg-primary-darker
-                                bg-primar
-                                focus-visible:ring-2
-                                ring-primary ring-opacity-75 ring-offset-2" 
-                                style="
-                                position:absolute;
-                                left: 50%;
-                                bottom: 0;
-                                transform: translate(-50%, -50%);
-                                margin-top: 0;
-                                margin-bottom: 0"> Send
-                    </button>
-                </div>
 
 
             </div>
         </div>
     </div>
 </template>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const inputs = Array.from(
+            document.querySelectorAll('input[name=email], input[name=phone-number]')
+        )
+
+        const inputListener = e => {
+            inputs
+                .filter(i => i !== e.target)
+                .forEach(i => (i.required = !e.target.value.length))
+        }
+
+        inputs.forEach(i => i.addEventListener('input', inputListener))
+    })
+</script>
 <div
 	class="fixed top-36 inset-x-0 z-50 mx-auto p-4 border w-96 shadow-lg rounded-md bg-white backdrop-blur-sm"
     id="text-thank-you"
